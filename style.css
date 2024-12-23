@@ -1,11 +1,13 @@
 /* General Body Styles */
 body {
-    background-color: #7867a4; 
-    color: white; 
+    background: url('Nathan_PORTFOLIO.jpeg') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: white;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    justify-content: space-between;
+    display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
 /* General Reset */
@@ -332,7 +334,7 @@ footer {
     text-align: center;
     font-size: 1em;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
