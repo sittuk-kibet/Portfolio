@@ -7,6 +7,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
 }
+
 /* General Reset */
 * {
     margin: 0;
@@ -129,159 +130,6 @@ section {
     margin: 20px;
 }
 
-/* Skills List */
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills li {
-    background-color: #222;
-    color: #fff;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    font-size: 1rem;
-}
-
-#skills li strong {
-    color: #4CAF50; /* Green color for the skill name */
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    background-color: #f0f0f0; /* Light greyish background */
-    margin: 20px auto;
-    max-width: 800px;
-    font-family: Arial, sans-serif;
-}
-
-/* Section Headings */
-section h2 {
-    color: #4CAF50; /* Green headings */
-    margin-top: 20px;
-}
-
-section p {
-    line-height: 1.6;
-}
-
-section p strong {
-    color: #333;
-    font-weight: bold;
-}
-
-/* Header Styling for Main */
-header {
-    text-align: center;
-    margin-top: 100px; /* Space for fixed navbar */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.8rem; /* Reduce font size on smaller screens */
-    }
-
-    #skills li {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-}
-
-
-/* Header Styling */
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    color: #f1f1f1;
-    margin-top: 100px; /* Space for fixed navbar */
-    text-align: center;
-}
-
-/* Contact Form Container */
-.contact-container {
-    background-color: #222; /* Dark background for form */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 500px;
-    margin: 50px auto;
-}
-
-/* Form Group Styling */
-.form-group {
-    margin-bottom: 20px;
-}
-
-/* Label Styling */
-label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #f1f1f1;
-    display: block;
-    margin-bottom: 8px;
-}
-
-/* Input and Textarea Styles */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #333; /* Dark background for inputs */
-    color: white;
-    font-size: 1rem;
-}
-
-/* Placeholder Styling */
-input::placeholder, textarea::placeholder {
-    color: #aaa;
-}
-
-/* Button Styling */
-button {
-    background-color: #16a085; /* Teal button color */
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    cursor: pointer;
-    font-size: 1rem;
-    width: 100%;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-/* Button Hover */
-button:hover {
-    background-color: #f39c12; /* Yellow on hover */
-}
-
-/* Response Message Styling */
-#response-message {
-    margin-top: 20px;
-    text-align: center;
-    color: red;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .contact-container {
-        width: 90%; /* Make form responsive on smaller screens */
-    }
-}
 /* Skills Section Styling */
 #skills {
     background-color: #222; /* Dark background */
@@ -333,14 +181,25 @@ button:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    #skills {
-        width: 90%;
+    .navbar {
+        padding: 10px 20px;
     }
-    
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.8rem; /* Reduce font size on smaller screens */
+    }
+
     #skills li {
-        font-size: 0.9rem; /* Smaller font size on mobile */
+        padding: 10px;
+        font-size: 0.9rem;
     }
 }
+
 /* Projects Section Styling */
 #projects {
     background-color: #222;
@@ -445,119 +304,6 @@ button:hover {
         width: 90%;
     }
 }
-/* General Styling */
-body {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('background.jpg'); /* Adjust path based on your project */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-attachment: fixed; /* Keeps the background in place during scrolling */
-    color: #fff; /* Adjust text color for better readability */
-}
-
-
-/* Header */
-header h1 {
-    margin: 20px 0;
-    color: #f1f1f1;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
-
-/* Projects Section */
-#projects {
-    padding: 40px 20px;
-    background-color: #222; /* Dark grey background */
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    max-width: 1000px;
-}
-
-#projects h2 {
-    color: #4CAF50; /* Green headings */
-    margin-bottom: 20px;
-}
-
-/* Projects Container */
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-/* Individual Project Card */
-.project-card {
-    background-color: #333; /* Darker background for cards */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 300px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
-}
-
-/* Project Image */
-.project-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* Project Info */
-.project-info {
-    padding: 15px;
-}
-
-.project-info h3 {
-    color: #f39c12; /* Vibrant Yellow */
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.project-info p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 15px;
-    color: #ccc; /* Subtle grey text */
-}
-
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #16a085; /* Teal */
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    border-radius: 4px;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #f39c12; /* Yellow on hover */
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 90%; /* Full width for smaller screens */
-    }
-}
 
 /* About Section */
 #about {
@@ -577,6 +323,7 @@ header h1 {
     font-size: 1.3em;
     margin-bottom: 20px;
 }
+
 /* Footer Section */
 footer {
     background-color: rgba(0, 0, 0, 0.8);
