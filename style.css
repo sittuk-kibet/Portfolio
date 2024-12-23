@@ -1,6 +1,6 @@
 /* General Body Styles */
 body {
-    background: url('Nathan_PORTFOLIO.jpeg') no-repeat center center fixed; /* Set background image */
+    background: url('background.jpg') no-repeat center center fixed; /* Set background image */
     background-size: cover; /* Ensure the image covers the entire background */
     color: white;
     font-family: 'Poppins', sans-serif;
